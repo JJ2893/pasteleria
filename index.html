@@ -1,23 +1,35 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Principal</title>
+	<link rel="stylesheet" type="text/css" href="Principal.css">
+	<link type="text/css" href="style.css" rel="stylesheet" media="screen"/>
+	<script type="text/javascript" src="javascript.js"></script>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-	
-	<head>
-		<title>Formulario con JavaScript</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<header style="z-index: 3;">
+	<a href="#" id="logo"><img src="logo.png"></a>
+	<nav id="menu_principal">
+		<a class="m_o" href="#">Principal</a>
+		<a class="m_o" href="#">Productos</a>
+		<a class="m_o" href="#">Contacto</a>
+		<a class="m_o" href="#">Nosotros</a>
+	</nav>
+</header>
+
+<!--Menú Lateral Panal-->
+	<aside id="menu_lateral">
 		
-		<!--lee codigo javascript-->
-		<script type="text/javascript" src="javascript.js"></script>
-		
-		<!--lee codigo css-->
-		<link type="text/css" href="style.css" rel="stylesheet" media="screen"/>
-	</head>
+	</aside>
+<!--Fin Menú Lateral Panal-->
 
-
-	<body>
-		<div id="todo" class="todoNo">
-			<div id="menu" class="menuNo">
-				
+<div class="wrapper">
+	<section> <!-- Tienda - items -->
+		<div id="todo">
+			<div id="menu">
 				
 				<!--Producto del 1 al 9-->
 				<div id="div1" name="DIVS"></div>
@@ -28,11 +40,16 @@
 				<div id="div6" name="DIVS"></div>
 				<div id="div7" name="DIVS"></div>
 				<div id="div8" name="DIVS"></div>
-				<div id="div9" name="DIVS"></div>
-		
-				
-				<!--Botones de compra-->
-				<div id="divbotones">
+				<div id="div9" name="DIVS"></div>	
+
+			</div>	
+		</div>
+	</section>
+	<section>
+		<!--Botones de compra-->
+			<div id="todo">
+			<div id="menu">
+				<div id="divbotones" class="todoNo menuNo">
 					<input type="button" id="botonTotal" value="Calcular total"/>
 					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
 					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
@@ -250,8 +267,59 @@
 						</div>
 					</div>						
 				</div>
-			</div>	
+			</div>
 		</div>
-		<footer> Pie de página </footer>
-	</body>
+	</section>
+	<section>
+		<h2>Lorem</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section>
+		<h2>Lorem</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section>
+		<h2>Lorem</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="Principal.js"></script>
+</body>
 </html>

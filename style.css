@@ -1,5 +1,5 @@
 ﻿/*Fichero de estilos para pantallas de ordenador*/
-	body {background: #000;color:white;font-size:14px;font-family:comic sans ms;}
+/*	body {background: #000;color:white;font-size:14px;font-family:comic sans ms;}*/
 
 * {
 	margin: 0px;
@@ -44,105 +44,35 @@
 		margin-left:auto;
 		margin-right:auto;
 		display:block;
-		width:1000px;
-		background: #000 url("../img/otros/plantilla.jpg") no-repeat;
+		width:inherit;
+		z-index: 0;
+		background-color: inherit;
+		margin: auto;
+		align-items: center;
 }
-	div.todoNo{height:805px;}
-	div.todoSi{height:1070px;}
+	div.todoNo{}
+	div.todoSi{}
 
 
 	#menu{
-		position:absolute;
-		top:26px;
-		left:143px;
-		width:715px;
-}
-	div.menuNo{height:775px;}
-	div.menuSi{height:1040px;}
+		position:relative;
+		width: inherit;
+		z-index: 0;
+	}
+
+	div.menuNo{}
+	div.menuSi{}
 
 /*Divs para colocar cada producto en su sitio*/
-	#div1{
-		position:absolute;
-		top:38px;
-		left:12px;
-		width:221px;
-		height:217px;
+	#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9 {
+		display: inline-block;
+		position: relative;
 	}
-
-	#div2{
-		position:absolute;
-		top:38px;
-		left:246px;
-		width:221px;
-		height:217px;
-	}
-
-	#div3{
-		position:absolute;
-		top:38px;
-		left:480px;
-		width:221px;
-		height:217px;
-	}
-
-	#div4{
-		position:absolute;
-		top:271px;
-		left:12px;
-		width:221px;
-		height:217px;
-	}
-
-	#div5{
-		position:absolute;
-		top:271px;
-		left:246px;
-		width:221px;
-		height:217px;
-	}
-
-	#div6{
-		position:absolute;
-		top:271px;
-		left:480px;
-		width:221px;
-		height:217px;
-	}
-
-	#div7{
-		position:absolute;
-		top:504px;
-		left:12px;
-		width:221px;
-		height:217px;
-	}
-
-	#div8{
-		position:absolute;
-		top:504px;
-		left:246px;
-		width:221px;
-		height:217px;
-	}
-
-	#div9{
-		position:absolute;
-		top:504px;
-		left:480px;
-		width:221px;
-		height:217px;
-	}
-
-
 
 /*CSS DEL CARRITO DE LA COMPRA*/
 	/*Div para los botones*/
 	#divbotones{
 		position:relative;
-		top:742px;
-		left:11px;
-		width:440px;
-		height:23px;
 	}
 
 	#tablaTotal {
@@ -175,7 +105,6 @@
 	/*Divs para la zona de compras*/
 	div.divZonaCompraSi{
 		position:relative;
-		top:742px;
 		padding:0px 11px 20px 11px;
 		display:yes;
 		width:693px;
@@ -185,7 +114,6 @@
 	}
 	div.divZonaCompraNo{
 		position:relative;
-		top:742px;
 		padding:0px 11px 20px 11px;
 		display:none;
 		width:693px;
@@ -200,26 +128,29 @@
 	}
 	#divDatos{
 		background:#378582;
+		z-index: 2;
 	}
 
 	#divPago{
 		height: 150px;
 		padding-left:10px;
 		background:#378582;
+		z-index: 2;
 	}
 	
 	#divDatosPersonales0 {
 		position:relative;
-		left:0px;
 		padding:0px 0px 0px 10px;
 		width:440px;
 		height:140px;
+		z-index: 2;
 	}
 
 	#divDatosPersonales1 {
 		position:relative;
 		width:230px;
 		height:130px;
+		z-index: 2;
 	}
 
 	#divDatosPersonales2 {
@@ -228,10 +159,12 @@
 		left:260px;
 		width:200px;
 		height:130px;
+		z-index: 2;
 	}
 
 	#divDomicilio{
 		padding:0px 0px 0px 10px;
+		z-index: 2;
 	}
 
 

@@ -73,7 +73,6 @@
 		var todoBien = true;
 		uniUser = document.getElementsByName("uniUser");
 		
-		
 		for (i in productos){
 		
 			if ( uniUser[i].value == "" || uniUser[i].value > stock[i] || uniUser[i].value < 0 ){
@@ -487,6 +486,6 @@
 
 //FUNCION DE VALIDAR DATOS PAGO y ENVIAR DATOS
 	function validaDatosPagoYEnviaCarro(elEvento) {
-		alert("Gracias por su compra, en 24 horas recibirá su pedido\nAhora será redirigido a la página de inicio.");
+		alert("Gracias por su compra, en 24 horas recibirá su pedido\nAhora será redirigido a la pagina de inicio.");
 		window.location.reload()
 	}
