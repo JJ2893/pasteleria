@@ -487,6 +487,6 @@
 
 //FUNCION DE VALIDAR DATOS PAGO y ENVIAR DATOS
 	function validaDatosPagoYEnviaCarro(elEvento) {
-		alert("Gracias por su compra, en 24 horas recivira su pedido\nAhora sera redirigido a la pagina de inicio.");
+		alert("Gracias por su compra, en 24 horas recibirá su pedido\nAhora será redirigido a la página de inicio.");
 		window.location.reload()
 	}
