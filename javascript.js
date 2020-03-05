@@ -244,13 +244,13 @@
 				document.getElementById("dni").className = "textBien";
 			}
 			
-			if(vDNI.charAt(8) != letras[(vDNI.substring(0, 8))%23]) {
+			/*if(vDNI.charAt(8) != letras[(vDNI.substring(0, 8))%23]) {
 				todoBien=false;
 				document.getElementById("dni").className = "textMal";
 			}	
 			else{
 				document.getElementById("dni").className = "textBien";
-			}	
+			}	*/
 	
 	
 		//Fecha de nacimiento DIA:
