@@ -1,11 +1,11 @@
 body{
 	background: #ffffff;
 }
-.menu{
+.submenu{
 	z-index: -1;
 	transform: scale(0.95);
 }
-.prueba,.menu{
+.prueba,.submenu{
 	height:70px;
 	width: 80px;
 	position: absolute;
@@ -123,6 +123,6 @@ a .fa{
 
 a .fa:hover{
 	transform: scale(1.2);
-	transition: .2s;
+	transition: .3s;
 }
 
