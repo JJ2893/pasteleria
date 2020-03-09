@@ -16,7 +16,7 @@
 		</div>	
 	</div>
 
-	<div class="menu" id="menu">
+	<div class="submenu" id="submenu">
 		<div id="facebook" class="mitad_arriba_item">
 			<a href="#">
 				<i id="fb" class="fa fa-facebook" aria-hidden="true"></i>
@@ -41,11 +41,11 @@
 
 		<script type="text/javascript">
 		var j=0;
-		var i=document.getElementById("menu").childNodes;
+		var i=document.getElementById("submenu").childNodes;
 		function expand(){
 			if (j==0) {
 				document.getElementById("share").style.transform='rotate(180deg)';
-				document.getElementById("menu").style.transform='scale(0.9)';
+				document.getElementById("submenu").style.transform='scale(0.9)';
 				i[1].style.transform='translateY(-80px)';
 				i[3].style.transform='translate(70px,-40px)';
 				i[5].style.transform='translate(70px,40px)';
@@ -54,7 +54,7 @@
 			}
 			else{
 				document.getElementById("share").style.transform = 'rotate(0deg)';
-				document.getElementById("menu").style.transform='scale(0.9)';
+				document.getElementById("submenu").style.transform='scale(0.9)';
 				i[1].style.transform='translateY(0px)';
 				i[3].style.transform='translate(0px)';
 				i[5].style.transform='translate(0px)';

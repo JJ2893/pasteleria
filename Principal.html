@@ -3,57 +3,82 @@
 <head>
 	<title>Principal</title>
 	<link rel="stylesheet" type="text/css" href="Principal.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="pastel.png" />
 </head>
 <body>
 <header>
-	<a href="#" id="logo"><img src="logo.png"></a>
+	<a href="#" id="logo"><img src="logo.png" height="70%"></a>
 	<nav id="menu">
 		<a class="m_o" href="#">Principal</a>
 		<a class="m_o" href="#">Productos</a>
 		<a class="m_o" href="#">Contacto</a>
 		<a class="m_o" href="#">Nosotros</a>
+		<a href="iniciar_sesion.html"><button>Iniciar sesión</button></a>
 	</nav>
 </header>
 
 <!--Menú Lateral Panal-->
 	<aside id="menu_lateral">
 		
+		<div class="prueba" onclick="expand()">
+			<div class="mitad_arriba" id="arriba">
+				<i class="fa fa-share" aria-hidden="true"
+				id="share"></i>
+			</div>	
+		</div>
+		<div class="submenu" id="submenu">
+			<div id="facebook" class="mitad_arriba_item">
+				<a href="#">
+					<i id="fb" class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="twitter" class="mitad_arriba_item">
+			<a href="#">
+				<i id="tw" class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+			</div>
+			<div id="instagram" class="mitad_arriba_item">
+				<a href="#">
+					<i id="ins" class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="youtube" class="mitad_arriba_item">
+				<a href="#">
+					<i id="yt" class="fa fa-youtube-play" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
 	</aside>
 <!--Fin Menú Lateral Panal-->
+		<div class="slider">
+	  		<div class="slide">
+	    	<img src="pastel1.jpg" />
+	    <h1>Encabezado 1</h1>
 
-<div class="wrapper">
-	<section>
-		<h2>Lorem</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section>
-		<h2>Lorem</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
+	    <p>Texto 1</p>
+	  </div>
+	  <div class="slide">
+	    <img src="pastel2.jpg" />
+	    <h1>Encabezado 2</h1>
+
+	    <p>Texto 2</p>
+	  </div>
+	  <div class="slide">
+	    <img src="pastel3.jpg" />
+	    <h1>Encabezado 3</h1>
+
+	    <p>Texto 3</p>
+	  </div>
+	  <div class="slide">
+	    <img src="pastel4.jpg" />
+	    <h1>Encabezado 4</h1>
+
+	    <p>Texto 4</p>
+	  </div>
+	</div>
+
 	<section>
 		<h2>Lorem</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

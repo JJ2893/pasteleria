@@ -14,31 +14,12 @@ header{
 	width: 100%;
 	height: 300px;
 	align-content: center;
-	background-color: #ffc64d;
+	background-color: #882222;
 	text-align: center;
-	position: fixed ;
+	position: fixed;
 	top:0;
 	overflow: hidden;
 	transition: all 0.5s ease;
-
-}
-.m_o{
-	color: white;
-	display: inline-block;
-	padding: 10px 15px;
-	line-height: 1;
-	text-decoration: none;
-	border-radius: 5px;
-	text-transform: uppercase;
-}
-.m_o:hover{
-	color: white;
-	background-color: #805500;	
-	border-radius: 15px;
-}
-#logo{
-	line-height: 150px;
-	transition: all 0.3s ease;
 }
 header nav{
 	display: flex;
@@ -49,7 +30,29 @@ header nav{
 	height: 60px; 
 	line-height: 60px;
 	width: 100%;
-	background: #EFAC2B;
+	background: #FFDE1C;
+}
+.m_o{
+	color: black;
+	display: inline-block;
+	margin:  0px 0px 30px 0px;
+	padding: 10px 15px;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: Tahoma;
+}
+/*Elemento del menú:hover*/
+.m_o:hover{
+	color: black;
+	background-color: #FFB700;	
+	border-radius: 20px;
+	transition-duration: 0.2s;
+}
+#logo{
+	line-height: 150px;
+	transition: all 0.3s ease;
 }
 h2{
 	font-size: 34px;
@@ -76,15 +79,22 @@ section{
 	background:white;
 	border-radius: 24px;
 	box-shadow: 0 1px 1 #ED2525; 
-	height: auto;
+}
+
+/*Color de header Principal*/
+header {
+	background-color: #C82828;
+	box-shadow: 0px 1px 10px #000000;
+	z-index: 5;
 }
 
 body.sticky-header{
 	padding-top: 100px;
 }
+
 body.sticky-header header{
 	height: 60px;
-	background: #e88300;
+	background: #882222;
 }
 
 /* INTENTO PONER 'STICKY' EL PANAL
@@ -101,107 +111,164 @@ aside.sticky-header header{
 
 
 /* menu lateral PANAL*/
-
-aside{
-	float: left;
+.submenu{
+	z-index: 0;
+	transform: scale(0.95);
 }
-
-.contenedor{
-	position: left;
+.prueba{
+	z-index: 1;
 }
-.contenedor,.rs{
-	height:140px;
-	width: 160px;
+.prueba,.submenu{
+	height:70px;
+	width: 80px;
 	position: absolute;
 	margin: auto;
-	top: 0;
+	top: 850px;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	right: 100;
 	cursor: pointer;
 }
-.rs{
-	z-index: -1;
-	transform: scale(0.9);	
-}
 
-
-.toggle{
+.mitad_arriba{
 	height: 0; 
-	width: 80px;
-	border-bottom: 70px solid #f9d230;
-	border-left: 40px solid transparent;	 
-	border-right: 40px solid transparent;
+	width: 80px; 	/*ancho*/
+	border-top: 0;
+	border-bottom: 35px solid #00C0FF;; /*alto color mitad_inferior*/
+	border-left: 20px solid transparent; /*equina sup_izquierda*/
+	border-right: 20px solid transparent;/*equina sup_derecha*/
 	position: absolute;
-	top: 0;
 }
-
-.toggle:before{
+.mitad_arriba:before{
 	content: '';
 	height: 0;
-	width: 80px;
-	border-top: 70px solid #f9d230;
-	border-left: 40px solid transparent;	 
-	border-right: 40px solid transparent;
+	width: 40px;
+	border-top: 35px solid #1BADC0; /*color mitad_inferior*/
+	border-left: 20px solid transparent;	 
+	border-right: 20px solid transparent;
 	position: absolute;
-	top: 70px;
-	left: -40px; 
+	top: 35px;
+	left: -20px;
 }
 
-.item{
-	height: 0;
-	width: 80px;
-	border-bottom: 70px solid #f0f0f0;
-	border-left: 40px solid transparent;	 
-	border-right: 40px solid transparent;
+.mitad_arriba_item{
+	height: 0; 
+	width: 80px; 	/*ancho*/
+	border-left: 20px solid transparent; /*equina sup_izquierda*/
+	border-right: 20px solid transparent;/*equina sup_derecha*/
 	position: absolute;
-	top: 0;
 	transition: 1s;
+	top: 0;
 }
-.item:before{
+.mitad_arriba_item:before{
 	content: '';
 	height: 0;
-	width: 80px;
-	border-top: 70px solid #f0f0f0;
-	border-left: 40px solid transparent;	 
-	border-right: 40px solid transparent;
+	width: 40px;
+	border-left: 20px solid transparent;	 
+	border-right: 20px solid transparent;
 	position: absolute;
-	top: 70px;
-	left: -40px 
+	top: 35px;
+	left: -20px 
 }
-#add{
-	font-size: 100px;
-	color: #ED763C;
+
+#facebook{
+	border-bottom: 35px solid #3f68c0;/*altura*/
+}
+#facebook:before{
+	border-top: 35px solid #3f68c0;/*altura*/
+}
+#twitter{
+	border-bottom: 35px solid #22acfe;/*altura*/
+}
+#twitter:before{
+	border-top: 35px solid #22acfe;/*altura*/
+}
+#youtube{
+	border-bottom: 35px solid #ff0000;/*altura*/
+}
+#youtube:before{
+	border-top: 35px solid #ff0000;/*altura*/
+}
+#instagram{
+	border-bottom: 35px solid #CC6681;/*altura*/
+}
+#instagram:before{
+	border-top: 35px solid #CC6681;/*altura*/
+}
+
+#share{
+	font-size: 40px;
+	color: white;
 	position: relative;
-	top: 20px;
-	right: 10px;
+	left: 1px;
+	top: 15px;
 	transition: 1s;
 }
-
-.item a{
+/**************************/
+#fb{
 	position: relative;
-	top: 40px;
-	left: 10px;
+	left: 7px;
+}
+#tw{
+	position: relative;
+	left: 3px;
+}
+#ins{
+	position: relative;
+	left: 3px;
+}
+#yt{
+	position: relative;
 }
 
-a>.material-icons{
-	color: #d2d2d2;
-	font-size: 60px;
+a{
+	justify-content: center;
+	position: relative;
+	top: 15px;
 }
 
-a>.material-icons:hover{
-	color: #f9d230;
-	transform: scale(1.3);
+/**************************/
+a .fa{
+	color: white;
+	font-size: 40px;
+}
+
+a .fa:hover{
+	transform: scale(1.2);
+	transition: .3s;
+}
+
+#menu_lateral {
+	position: fixed;
 }
 
 
 /* fin menu lateral PANAL*/
 
+/*Botón personalizado*/
+a button {
+	font-size: 20px;
+	color: black;
+	display: inline-block;
+	margin:  0px 0px 35px 0px;
+	padding: 10px 15px;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: Tahoma;
+	border-radius: 12px;
+	background-color: #FFB700;
+}
 
+a button:hover {
+	background-color: #F6B000;
+	cursor: pointer;
+}
 
-/* Prueba menu chiquito*/
-
-
+.mediano {
+	height: 100px;
+}
 
 
 
