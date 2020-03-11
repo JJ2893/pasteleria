@@ -61,3 +61,17 @@
     transform: translateX(-100%);
   }    
 }
+
+.slide h1 {
+  font-size: 55px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-right: 10px;
+}
+
+.slide p {
+  font-size: 35px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-left: 10px;
+}
