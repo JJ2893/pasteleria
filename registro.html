@@ -10,24 +10,28 @@
     <script type="text/javascript">
     	function validar() {
     		nombre = document.getElementById("nombre");
-    		pass = document.getElementById("pass");
-
     		valido = /^[A-Za-z]+$/.test(nombre.value);
     		if(!valido) {
-    			remarcar = nombre;
     			nombre.style.backgroundColor = "rgb(255, 180, 191)";
      		} else {
      			nombre.style.backgroundColor = "#DCECD2";
      		}
 
-     		valido = /[A-Za-z0-9]+{6}/.test(pass.value);
+     		pass = document.getElementById("pass");
+     		valido = /[A-Za-z0-9]{6,18}/.test(pass.value);
     		if(!valido) {
-    			remarcar = nombre;
-    			nombre.style.backgroundColor = "rgb(255, 180, 191)";
+    			pass.style.backgroundColor = "rgb(255, 180, 191)";
      		} else {
-     			nombre.style.backgroundColor = "#DCECD2";
+     			pass.style.backgroundColor = "#DCECD2";
      		}
-     		remarcar.focus();
+
+     		correo = document.getElementById("correo");
+    		valido = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i.test(correo.value);
+    		if(!valido) {
+    			correo.style.backgroundColor = "rgb(255, 180, 191)";
+     		} else {
+     			correo.style.backgroundColor = "#DCECD2";
+     		}
     	}
     </script>
 </head>
@@ -43,7 +47,7 @@
     			<!--<label for="fname">Usuario</label><br>-->
     			<input type="text" id="nombre" name="nomb" placeholder="Nombre de usuario">
     			<!--<label for="lname">Contraseña</label><br>-->
-   				<input type="text" id="pass" name="pass" placeholder="Contraseña">
+   				<input type="password" id="pass" name="pass" placeholder="Contraseña">
    				<input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
     			<input type="button" value=">" onclick="validar();">
   			</fieldset>
