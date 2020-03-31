@@ -2,11 +2,34 @@
 <html>
 <head>
 	<title>Principal</title>
-	<!-- <link rel="stylesheet" type="text/css" href="Principal.css"> -->
 	<link rel="stylesheet" type="text/css" href="Iniciar_sesion.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="pastel.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+    	function validar() {
+    		nombre = document.getElementById("nombre");
+    		pass = document.getElementById("pass");
+
+    		valido = /^[A-Za-z]+$/.test(nombre.value);
+    		if(!valido) {
+    			remarcar = nombre;
+    			nombre.style.backgroundColor = "rgb(255, 180, 191)";
+     		} else {
+     			nombre.style.backgroundColor = "#DCECD2";
+     		}
+
+     		valido = /[A-Za-z0-9]+{6}/.test(pass.value);
+    		if(!valido) {
+    			remarcar = nombre;
+    			nombre.style.backgroundColor = "rgb(255, 180, 191)";
+     		} else {
+     			nombre.style.backgroundColor = "#DCECD2";
+     		}
+     		remarcar.focus();
+    	}
+    </script>
 </head>
 <body>
 <header class="mediano">
@@ -18,11 +41,11 @@
 			<fieldset>
     			<legend>Registro</legend>
     			<!--<label for="fname">Usuario</label><br>-->
-    			<input type="text" id="fname" name="fname" placeholder="Nombre de usuario">
+    			<input type="text" id="nombre" name="nomb" placeholder="Nombre de usuario">
     			<!--<label for="lname">Contraseña</label><br>-->
-   				<input type="text" id="lname" name="lname" placeholder="Contraseña">
+   				<input type="text" id="pass" name="pass" placeholder="Contraseña">
    				<input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
-    			<input type="submit" value=">" onclick="verificar();">
+    			<input type="button" value=">" onclick="validar();">
   			</fieldset>
 		</form><br>
 		<h3 class="texto">O inicia sesión con:</h3>
