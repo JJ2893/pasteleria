@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Principal</title>
-	<link rel="stylesheet" type="text/css" href="Iniciar_sesion.css">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+    <link rel="stylesheet" type="text/css" href="/css/Iniciar_sesion.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="pastel.png" />
+    <link rel="icon" type="image/png" href="/img/pastel.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript">
-    	function validar() {
-    		nombre = document.getElementById("nombre");
-    		valido = /^[A-Za-z]+$/.test(nombre.value);
-    		if(!valido) {
-    			nombre.style.backgroundColor = "rgb(255, 180, 191)";
-     		} else {
-     			nombre.style.backgroundColor = "#DCECD2";
-     		}
+      function validar() {
+        nombre = document.getElementById("nombre");
+        valido = /^[A-Za-z]+$/.test(nombre.value);
+        if (!valido) {
+          nombre.style.backgroundColor = "rgb(255, 180, 191)";
+        } else {
+          nombre.style.backgroundColor = "#DCECD2";
+        }
 
-     		pass = document.getElementById("pass");
-     		valido = /[A-Za-z0-9]{6,18}/.test(pass.value);
-    		if(!valido) {
-    			pass.style.backgroundColor = "rgb(255, 180, 191)";
-     		} else {
-     			pass.style.backgroundColor = "#DCECD2";
-     		}
+        pass = document.getElementById("pass");
+        valido = /[A-Za-z0-9]{6,18}/.test(pass.value);
+        if (!valido) {
+          pass.style.backgroundColor = "rgb(255, 180, 191)";
+        } else {
+          pass.style.backgroundColor = "#DCECD2";
+        }
 
-     		correo = document.getElementById("correo");
-    		valido = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i.test(correo.value);
-    		if(!valido) {
-    			correo.style.backgroundColor = "rgb(255, 180, 191)";
-     		} else {
-     			correo.style.backgroundColor = "#DCECD2";
-     		}
-    	}
+        correo = document.getElementById("correo");
+        valido = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i.test(correo.value);
+        if (!valido) {
+          correo.style.backgroundColor = "rgb(255, 180, 191)";
+        } else {
+          correo.style.backgroundColor = "#DCECD2";
+        }
+      }
     </script>
-</head>
-<body>
-<header class="mediano">
-	<a href="index.html" id="logo"><img src="logo.png" height="80%"></a>
-</header>
-<section id="main">
-	<section id="login">
-		<form>
-			<fieldset>
-    			<legend>Registro</legend>
-    			<!--<label for="fname">Usuario</label><br>-->
-    			<input type="text" id="nombre" name="nomb" placeholder="Nombre de usuario">
-    			<!--<label for="lname">Contraseña</label><br>-->
-   				<input type="password" id="pass" name="pass" placeholder="Contraseña">
-   				<input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
-    			<input type="button" value=">" onclick="validar();">
-  			</fieldset>
-		</form><br>
-		<h3 class="texto">O inicia sesión con:</h3>
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-google"></a>
-	</section>
-</section>
-</body>
+  </head>
+
+  <body>
+    <header class="mediano">
+      <a href="/" id="logo"><img src="/img/logo.png" height="80%"></a>
+    </header>
+    <section id="main">
+      <section id="login">
+        <form>
+          <fieldset>
+            <legend>Registro</legend>
+            <!--<label for="fname">Usuario</label><br>-->
+            <input type="text" id="nombre" name="nomb" placeholder="Nombre de usuario">
+            <!--<label for="lname">Contraseña</label><br>-->
+            <input type="password" id="pass" name="pass" placeholder="Contraseña">
+            <input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
+            <input type="button" value=">" onclick="validar();">
+          </fieldset>
+        </form><br>
+        <h3 class="texto">O inicia sesión con:</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+      </section>
+    </section>
+  </body>
+
 </html>
